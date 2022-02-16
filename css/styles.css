@@ -4,10 +4,19 @@
 
 body { padding-bottom: 100px; } 
 
-.dib { display: inline-block; }    
+.dib { display: inline-block; } 
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5 { width: 1170px;
+            margin-top: 50px; }   
 
 
                                                      /*section 1*/
+
+
 
 .section1 { background-color: #363E97; }
 
@@ -31,8 +40,8 @@ body { padding-bottom: 100px; }
                                                       /*section 2*/
 
 
-.section2 { background-color: #E6E6E6;
-            margin-top: 50px; }
+.section2 { background-color: #E6E6E6; }
+
 
 .s2-container { width: 1170px;
                 margin: 0 auto; }
@@ -64,11 +73,10 @@ body { padding-bottom: 100px; }
            justify-content: flex-end;
            margin-right: 30px;
            margin-bottom: 20px; }
-           
+
 
                                                        /*section 3*/
 
-.section3 { margin-top: 50px; }
 
 .s3-container { width: 1170px;
                 margin: 0 auto; }
@@ -80,7 +88,55 @@ body { padding-bottom: 100px; }
 
 
 
+                                                 /*section 4*/
 
+
+.s4-p { display: flex;
+        justify-content: space-evenly;
+        align-items: center; }
+
+.s4-p::after { content: '';
+               display: inline-block;
+               background: url(https://c.tenor.com/UcfP4sUhs_4AAAAC/anime-smiley.gif);
+               background-repeat: no-repeat;
+               background-position: ;
+               width: 100px;
+               height: 100px; }
+
+
+                                                 /*section 5*/
+
+.s5-box { display: flex;
+          justify-content: space-evenly;
+          align-items: center; }
+
+.s5-box1,
+.s5-box2,
+.s5-box3 { width: 100px;
+           height: 100px;
+           margin-top: 10px;
+           display: flex;
+           justify-content: center;
+           align-items: center; }
+
+.s5-box1:nth-child(1) { background-color: red; }
+
+.s5-box1:nth-child(2) { background-color: blue; }
+
+.s5-box1:nth-child(3) { background-color: aqua; }
+
+.s5-box1:nth-child(4) { background-color: green; }
+
+
+.s5-box2:nth-child(even) { background-color: black; }
+
+.s5-box2:nth-child(odd) { background-color: yellow; }
+
+.s5-box3:nth-child(1) .s5-p { color: red;
+                               }
+.s5-box3 { background-color: gray; }
+
+.s5-box3:nth-child(2) .s5-p { color: blue; }
 
 
 
